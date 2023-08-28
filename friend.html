@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>마이카톡</title>
 		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/friend_css/style.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -30,7 +30,7 @@
 					</ul>
 				</div>
 			</header>
-			<section>
+			<section class="friend">
 				<div class="nav">
 					<ul class="left">
 						<li>친구들</li>
@@ -40,11 +40,11 @@
 							<a href="#"><i class="fas fa-magnifying-glass"></i></a>
 						</li>
 						<li>
-							<a href="#"><i class="fas fa-gear"></i></a>
+							<a href="./setting.html"><i class="fas fa-gear"></i></a>
 						</li>
 					</ul>
 				</div>
-				<div class="friend">
+				<div class="friends">
 					<ul class="me">
 						<li>
 							<img src="./images/me.jpg" alt="#" />
@@ -63,9 +63,11 @@
 							<img src="./images/ico_cake.png" alt="#" />
 							<ul>
 								<li>친구의 생일을 확인해 보세요!</li>
-							</ul>
-							<ul>
-								<li></li>
+								<li class="date">
+									<ul>
+										<li></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 					</ul>
@@ -75,72 +77,96 @@
 							<img src="./images/friend_burgerking.jpg" alt="#" />
 							<ul>
 								<li>버거킹 채널</li>
-							</ul>
-							<ul>
-								<li></li>
+								<li class="date">
+									<ul>
+										<li></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 					</ul>
 
 					<ul class="bookmark">
 						<li>즐겨찾기</li>
-					</ul>
-					<li>
-						<ul>
-							<li></li>
-							<li></li>
-						</ul>
-					</li>
 
-					<li>
-						<img src="./images/cat.jpg" alt="#" />
-						<ul>
-							<li>미정</li>
-							<li>미정</li>
-						</ul>
-						<ul>
-							<li></li>
-						</ul>
-					</li>
-					<li>
-						<img src="./images/pic.jpg" alt="#" />
-						<ul>
-							<li>미정</li>
-							<li>미정</li>
-						</ul>
-						<ul>
-							<li></li>
-						</ul>
-					</li>
-					<li>
-						<img src="./images/pic2.jpg" alt="#" />
-						<ul>
-							<li>미정</li>
-							<li>미정</li>
-						</ul>
-						<ul>
-							<li></li>
-						</ul>
-					</li>
+						<li>
+							<a href="./talk1.html"
+								><img src="./images/pic1.png" alt="#" />
+								<ul>
+									<li>미정</li>
+									<li>미정</li>
+									<li class="date">
+										<ul>
+											<li>오후 12:45</li>
+											<li>4</li>
+										</ul>
+									</li>
+								</ul>
+							</a>
+						</li>
+
+						<li>
+							<a href="./talk2.html"
+								><img src="./images/cat.jpg" alt="#" />
+								<ul>
+									<li>미정</li>
+									<li>미정</li>
+									<li class="date">
+										<ul>
+											<li>오후 12:40</li>
+										</ul>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="./talk3.html">
+								<img src="./images/pic.jpg" alt="#" />
+								<ul>
+									<li>미정</li>
+									<li>미정</li>
+									<li class="date">
+										<ul>
+											<li>8월 24일</li>
+										</ul>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li>
+							<a href="./talk4.html"
+								><img src="./images/pic2.jpg" alt="#" />
+								<ul>
+									<li>미정</li>
+									<li>미정</li>
+									<li class="date">
+										<ul>
+											<li>8월23일</li>
+										</ul>
+									</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</section>
 			<footer>
 				<ul>
 					<li>
-						<a href="#"><i class="far fa-user"></i></a>
+						<a href="./friend.html"><i class="far fa-user"></i></a>
 					</li>
 
 					<li>
-						<a href="#"><i class="far fa-comment"></i></a>
+						<a href="./index.html"><i class="far fa-comment"></i></a>
 						<ul>
 							<li>4</li>
 						</ul>
 					</li>
 					<li>
-						<a href="#"><i class="fas fa-magnifying-glass"></i></a>
+						<a href="./find.html"><i class="fas fa-magnifying-glass"></i></a>
 					</li>
 					<li>
-						<a href="#"><i class="fas fa-ellipsis-h"> </i></a>
+						<a href="./more.html"><i class="fas fa-ellipsis-h"> </i></a>
 					</li>
 				</ul>
 			</footer>
