@@ -1,20 +1,31 @@
-#wrap {
+@keyframes keyboard {
+  from {
+    height: 0;
+  }
+  to {
+    height: 370px;
+  }
+}
+body {
+  position: relative;
   background-color: #242424;
-  width: 100%;
 }
 @media screen and (min-width: 550px) {
-  #wrap {
+  body {
     background-color: yellow;
     width: 100px;
   }
 }
-#wrap > h1 {
+body #wrap {
+  width: 100%;
+}
+body #wrap > h1 {
   display: none;
   width: 100%;
   text-align: center;
 }
 @media screen and (min-width: 550px) {
-  #wrap > h1 {
+  body #wrap > h1 {
     display: block;
     position: absolute;
     top: 50%;
@@ -22,173 +33,173 @@
     transform: translate(-50%, -50%);
   }
 }
-#wrap > header {
+body #wrap > header {
   height: 30px;
   border-bottom: 1px solid #000;
 }
 @media screen and (min-width: 550px) {
-  #wrap > header {
+  body #wrap > header {
     display: none;
   }
 }
-#wrap > header > .statusbar {
+body #wrap > header > .statusbar {
   position: relative;
   margin: 0 10px;
 }
-#wrap > header > .statusbar > .left {
+body #wrap > header > .statusbar > .left {
   display: flex;
   flex-flow: row nowrap;
 }
-#wrap > header > .statusbar > .left > li {
+body #wrap > header > .statusbar > .left > li {
   color: #fff;
   font-size: 15px;
   line-height: 30px;
   margin-right: 8px;
 }
-#wrap > header > .statusbar > .right {
+body #wrap > header > .statusbar > .right {
   position: absolute;
   top: 0;
   right: 0;
   display: flex;
   flex-flow: row wrap-reverse;
 }
-#wrap > header > .statusbar > .right > li {
+body #wrap > header > .statusbar > .right > li {
   margin-left: 8px;
   font-size: 15px;
   color: #fff;
   line-height: 30px;
 }
-#wrap > section.friend {
-  margin: 0 15px;
+body #wrap > section {
+  margin: 10px 15px;
 }
-#wrap > section.friend > .nav {
+body #wrap > section.friend > .nav {
   position: relative;
   margin: 30px 0 40px 0;
 }
-#wrap > section.friend > .nav > .left {
+body #wrap > section.friend > .nav > .left {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.friend > .nav > .left > li {
+body #wrap > section.friend > .nav > .left > li {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-right: 10px;
 }
-#wrap > section.friend > .nav > .left > li > a {
+body #wrap > section.friend > .nav > .left > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
 }
-#wrap > section.friend > .nav > .left > li:nth-child(2) > a {
+body #wrap > section.friend > .nav > .left > li:nth-child(2) > a {
   color: #acacac;
 }
-#wrap > section.friend > .nav > .right {
+body #wrap > section.friend > .nav > .right {
   display: flex;
   flex-flow: row wrap-reverse;
   position: absolute;
   top: 0;
   right: 0;
 }
-#wrap > section.friend > .nav > .right > li > a {
+body #wrap > section.friend > .nav > .right > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-left: 20px;
 }
-#wrap > section.friend > .nav > .right > li:nth-child(2) > a:hover {
+body #wrap > section.friend > .nav > .right > li:nth-child(2) > a:hover {
   color: #365242;
 }
-#wrap > section.friend > .friends > .me {
+body #wrap > section.friend > .friends > .me {
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
-#wrap > section.friend > .friends > .me > li {
+body #wrap > section.friend > .friends > .me > li {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.friend > .friends > .me > li > img {
+body #wrap > section.friend > .friends > .me > li > img {
   width: 80px;
   height: 80px;
   border-radius: 30px;
   margin-right: 10px;
 }
-#wrap > section.friend > .friends > .me > li > ul > li:nth-child(1) {
+body #wrap > section.friend > .friends > .me > li > ul > li:nth-child(1) {
   line-height: 40px;
   font-size: 20px;
   color: #fff;
 }
-#wrap > section.friend > .friends > .me > li > ul > li:nth-child(2) {
+body #wrap > section.friend > .friends > .me > li > ul > li:nth-child(2) {
   line-height: 30px;
   font-size: 16px;
   color: #acacac;
 }
-#wrap > section.friend > .friends > .birthday {
+body #wrap > section.friend > .friends > .birthday {
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
-#wrap > section.friend > .friends > .birthday > li {
+body #wrap > section.friend > .friends > .birthday > li {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.friend > .friends > .birthday > li:nth-child(1) {
+body #wrap > section.friend > .friends > .birthday > li:nth-child(1) {
   color: #fff;
   margin-bottom: 12px;
 }
-#wrap > section.friend > .friends > .birthday > li:nth-child(2) > img {
+body #wrap > section.friend > .friends > .birthday > li:nth-child(2) > img {
   width: 70px;
   height: 70px;
   border: 1px solid #000;
   margin-right: 10px;
   border-radius: 30px;
 }
-#wrap > section.friend > .friends > .birthday > li:nth-child(2) > ul > li {
+body #wrap > section.friend > .friends > .birthday > li:nth-child(2) > ul > li {
   color: #fff;
   line-height: 70px;
 }
-#wrap > section.friend > .friends > .bookmark > li {
+body #wrap > section.friend > .friends > .bookmark > li {
   margin: 15px 0;
   position: relative;
 }
-#wrap > section.friend > .friends > .bookmark > li:nth-child(1) {
+body #wrap > section.friend > .friends > .bookmark > li:nth-child(1) {
   color: #fff;
 }
-#wrap > section.friend > .friends > .bookmark > li > a {
+body #wrap > section.friend > .friends > .bookmark > li > a {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.friend > .friends > .bookmark > li > a:hover {
+body #wrap > section.friend > .friends > .bookmark > li > a:hover {
   background-color: #344862;
 }
-#wrap > section.friend > .friends > .bookmark > li > a > img {
+body #wrap > section.friend > .friends > .bookmark > li > a > img {
   width: 70px;
   height: 70px;
   border: 1px solid #000;
   margin-right: 10px;
   border-radius: 30px;
 }
-#wrap > section.friend > .friends > .bookmark > li > a > ul > li:nth-child(1) {
+body #wrap > section.friend > .friends > .bookmark > li > a > ul > li:nth-child(1) {
   line-height: 30px;
   font-size: 17px;
   color: #fff;
 }
-#wrap > section.friend > .friends > .bookmark > li > a > ul > li:nth-child(2) {
+body #wrap > section.friend > .friends > .bookmark > li > a > ul > li:nth-child(2) {
   line-height: 30px;
   font-size: 14px;
   color: #acacac;
 }
-#wrap > section.friend > .friends > .bookmark > li > a > ul > .date {
+body #wrap > section.friend > .friends > .bookmark > li > a > ul > .date {
   position: absolute;
   right: 0;
   top: 0;
   color: #fff;
 }
-#wrap > section.friend > .friends > .bookmark > li > a > ul > .date > ul > li:nth-child(1) {
+body #wrap > section.friend > .friends > .bookmark > li > a > ul > .date > ul > li:nth-child(1) {
   line-height: 40px;
 }
-#wrap > section.friend > .friends > .bookmark > li > a > ul > .date > ul > li:nth-child(2) {
+body #wrap > section.friend > .friends > .bookmark > li > a > ul > .date > ul > li:nth-child(2) {
   margin: 0 auto;
   width: 15px;
   line-height: 15px;
@@ -196,87 +207,83 @@
   background-color: red;
   border-radius: 50px;
 }
-#wrap > section.index {
-  height: 791px;
-  margin: 10px 15px;
-}
 @media screen and (min-width: 550px) {
-  #wrap > section.index {
+  body #wrap > section.index {
     display: none;
   }
 }
-#wrap > section.index > .nav {
+body #wrap > section.index > .nav {
   position: relative;
   margin: 30px 0 40px 0;
 }
-#wrap > section.index > .nav > .left {
+body #wrap > section.index > .nav > .left {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.index > .nav > .left > li {
+body #wrap > section.index > .nav > .left > li {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-right: 10px;
 }
-#wrap > section.index > .nav > .left > li > a {
+body #wrap > section.index > .nav > .left > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
 }
-#wrap > section.index > .nav > .left > li:nth-child(2) > a {
+body #wrap > section.index > .nav > .left > li:nth-child(2) > a {
   color: #acacac;
 }
-#wrap > section.index > .nav > .right {
+body #wrap > section.index > .nav > .right {
   display: flex;
   flex-flow: row wrap-reverse;
   position: absolute;
   top: 0;
   right: 0;
 }
-#wrap > section.index > .nav > .right > li > a {
+body #wrap > section.index > .nav > .right > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-left: 20px;
 }
-#wrap > section.index > .nav > .right > li:nth-child(3) > a:hover {
+body #wrap > section.index > .nav > .right > li:nth-child(3) > a:hover {
   color: #365242;
 }
-#wrap > section.index > .chat > li:hover {
+body #wrap > section.index > .chat > li:hover {
   cursor: pointer;
   background-color: #344862;
 }
-#wrap > section.index > .chat > li > a {
+body #wrap > section.index > .chat > li > a {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.index > .chat > li > a > img {
+body #wrap > section.index > .chat > li > a > img {
   width: 70px;
   height: 70px;
   border-radius: 30px;
   margin-right: 10px;
 }
-#wrap > section.index > .chat > li > a > ul > li:nth-child(1) {
+body #wrap > section.index > .chat > li > a > ul > li:nth-child(1) {
   line-height: 30px;
   font-size: 17px;
   color: #fff;
 }
-#wrap > section.index > .chat > li > a > ul > li:nth-child(2) {
+body #wrap > section.index > .chat > li > a > ul > li:nth-child(2) {
   line-height: 30px;
   font-size: 14px;
   color: #acacac;
 }
-#wrap > section.index > .chat > li > a > ul > li:nth-child(3) {
+body #wrap > section.index > .chat > li > a > ul > li:nth-child(3) {
   position: absolute;
   right: 0;
   top: 0;
   color: #fff;
 }
-#wrap > section.index > .chat > li > a > ul > li:nth-child(3) > ul > li:nth-child(1) {
+body #wrap > section.index > .chat > li > a > ul > li:nth-child(3) > ul > li:nth-child(1) {
   line-height: 40px;
 }
-#wrap > section.index > .chat > li > a > ul > li:nth-child(3) > ul > li:nth-child(2) {
+body #wrap > section.index > .chat > li > a > ul > li:nth-child(3) > ul > li:nth-child(2) {
   margin: 0 auto;
   width: 15px;
   line-height: 15px;
@@ -284,170 +291,162 @@
   background-color: red;
   border-radius: 50px;
 }
-#wrap > section.index > .chat > li {
+body #wrap > section.index > .chat > li {
   position: relative;
   height: 70px;
   margin: 15px 0;
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.setting {
-  height: 791px;
-  margin: 10px 15px;
-}
 @media screen and (min-width: 550px) {
-  #wrap > section.setting {
+  body #wrap > section.setting {
     display: none;
   }
 }
-#wrap > section.setting > .nav {
+body #wrap > section.setting > .nav {
   position: relative;
   margin: 30px 0 40px 0;
 }
-#wrap > section.setting > .nav > .left {
+body #wrap > section.setting > .nav > .left {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.setting > .nav > .left > li {
+body #wrap > section.setting > .nav > .left > li {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-right: 10px;
 }
-#wrap > section.setting > .nav > .left > li > a {
+body #wrap > section.setting > .nav > .left > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
 }
-#wrap > section.setting > .nav > .left > li:nth-child(2) > a {
+body #wrap > section.setting > .nav > .left > li:nth-child(2) > a {
   color: #acacac;
 }
-#wrap > section.setting > .nav > .right {
+body #wrap > section.setting > .nav > .right {
   display: flex;
   flex-flow: row wrap-reverse;
   position: absolute;
   top: 0;
   right: 0;
 }
-#wrap > section.setting > .nav > .right > li > a {
+body #wrap > section.setting > .nav > .right > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-left: 20px;
 }
-#wrap > section.setting > .set > li > a ul {
+body #wrap > section.setting > .set > li > a ul {
   display: flex;
   flex-flow: row nowrap;
   padding: 5px 0;
   margin: 15px 0;
 }
-#wrap > section.setting > .set > li > a ul:hover {
+body #wrap > section.setting > .set > li > a ul:hover {
   background-color: #344862;
 }
-#wrap > section.setting > .set > li > a ul > li {
+body #wrap > section.setting > .set > li > a ul > li {
   color: #fff;
   line-height: 30px;
 }
-#wrap > section.setting > .set > li > a ul > li:nth-child(1) {
+body #wrap > section.setting > .set > li > a ul > li:nth-child(1) {
   width: 40px;
   font-size: 30px;
   margin-right: 20px;
   text-align: center;
 }
-#wrap > section.setting > .set > li > a ul > li:nth-child(2) {
+body #wrap > section.setting > .set > li > a ul > li:nth-child(2) {
   font-size: 25px;
 }
-#wrap > section.find {
-  height: 791px;
-  margin: 10px 15px;
-}
 @media screen and (min-width: 550px) {
-  #wrap > section.find {
+  body #wrap > section.find {
     display: none;
   }
 }
-#wrap > section.find > .nav {
+body #wrap > section.find > .nav {
   position: relative;
   margin: 30px 0 40px 0;
 }
-#wrap > section.find > .nav > .left {
+body #wrap > section.find > .nav > .left {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.find > .nav > .left > li {
+body #wrap > section.find > .nav > .left > li {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-right: 10px;
 }
-#wrap > section.find > .nav > .left > li > a {
+body #wrap > section.find > .nav > .left > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
 }
-#wrap > section.find > .nav > .left > li:nth-child(2) > a {
+body #wrap > section.find > .nav > .left > li:nth-child(2) > a {
   color: #acacac;
 }
-#wrap > section.find > .nav > .right {
+body #wrap > section.find > .nav > .right {
   display: flex;
   flex-flow: row wrap-reverse;
   position: absolute;
   top: 0;
   right: 0;
 }
-#wrap > section.find > .nav > .right > li > a {
+body #wrap > section.find > .nav > .right > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-left: 20px;
 }
-#wrap > section.find > .nav > .right > li:nth-child(2) > a:hover {
+body #wrap > section.find > .nav > .right > li:nth-child(2) > a:hover {
   color: #365242;
 }
-#wrap > section.find > .serch {
+body #wrap > section.find > .serch {
   padding-bottom: 10px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   border-bottom: 1px solid #000;
 }
-#wrap > section.find > .serch > li > a > ul {
+body #wrap > section.find > .serch > li > a > ul {
   width: 100px;
 }
-#wrap > section.find > .serch > li > a > ul > li {
+body #wrap > section.find > .serch > li > a > ul > li {
   color: #fff;
   text-align: center;
 }
-#wrap > section.find > .serch > li > a > ul > li:nth-child(1) {
+body #wrap > section.find > .serch > li > a > ul > li:nth-child(1) {
   font-size: 40px;
   margin-bottom: 10px;
 }
-#wrap > section.find > .serch > li > a > ul > li:nth-child(2) {
+body #wrap > section.find > .serch > li > a > ul > li:nth-child(2) {
   font-size: 15px;
 }
-#wrap > section.find > .friend > .tit {
+body #wrap > section.find > .friend > .tit {
   color: #fff;
   font-size: 15px;
   padding: 20px 0 15px 0;
 }
-#wrap > section.find > .friend > li > a {
+body #wrap > section.find > .friend > li > a {
   display: block;
 }
-#wrap > section.find > .friend > li > a > ul {
+body #wrap > section.find > .friend > li > a > ul {
   display: flex;
   flex-flow: row wrap;
   position: relative;
   margin: 15px 0;
   padding: 5px;
 }
-#wrap > section.find > .friend > li > a > ul:hover {
+body #wrap > section.find > .friend > li > a > ul:hover {
   background-color: #344862;
 }
-#wrap > section.find > .friend > li > a > ul > li {
+body #wrap > section.find > .friend > li > a > ul > li {
   color: #fff;
   line-height: 45px;
 }
-#wrap > section.find > .friend > li > a > ul > li:nth-child(1) {
+body #wrap > section.find > .friend > li > a > ul > li:nth-child(1) {
   margin-right: 10px;
   width: 45px;
   font-size: 35px;
@@ -456,10 +455,10 @@
   border: 1px solid #000;
   border-radius: 20px;
 }
-#wrap > section.find > .friend > li > a > ul > li:nth-child(2) {
+body #wrap > section.find > .friend > li > a > ul > li:nth-child(2) {
   font-size: 20px;
 }
-#wrap > section.find > .friend > li > a > ul > li.right {
+body #wrap > section.find > .friend > li > a > ul > li.right {
   position: absolute;
   top: 0;
   right: 0;
@@ -467,115 +466,111 @@
   font-size: 25px;
   text-align: center;
 }
-#wrap > section.more {
-  height: 791px;
-  margin: 10px 15px;
-}
 @media screen and (min-width: 550px) {
-  #wrap > section.more {
+  body #wrap > section.more {
     display: none;
   }
 }
-#wrap > section.more > .nav {
+body #wrap > section.more > .nav {
   position: relative;
   margin: 30px 0 40px 0;
 }
-#wrap > section.more > .nav > .left {
+body #wrap > section.more > .nav > .left {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.more > .nav > .left > li {
+body #wrap > section.more > .nav > .left > li {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-right: 10px;
 }
-#wrap > section.more > .nav > .left > li > a {
+body #wrap > section.more > .nav > .left > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
 }
-#wrap > section.more > .nav > .left > li:nth-child(2) > a {
+body #wrap > section.more > .nav > .left > li:nth-child(2) > a {
   color: #acacac;
 }
-#wrap > section.more > .nav > .right {
+body #wrap > section.more > .nav > .right {
   display: flex;
   flex-flow: row wrap-reverse;
   position: absolute;
   top: 0;
   right: 0;
 }
-#wrap > section.more > .nav > .right > li > a {
+body #wrap > section.more > .nav > .right > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-left: 20px;
 }
-#wrap > section.more > .nav > .right > li:nth-child(2) > a:hover {
+body #wrap > section.more > .nav > .right > li:nth-child(2) > a:hover {
   color: #365242;
 }
-#wrap > section.more .me > li:nth-child(1) {
+body #wrap > section.more .me > li:nth-child(1) {
   display: flex;
   flex-flow: row wrap;
   padding-bottom: 10px;
   margin-bottom: 15px;
   border-bottom: 1px solid #000;
 }
-#wrap > section.more .me > li:nth-child(1) > img {
+body #wrap > section.more .me > li:nth-child(1) > img {
   width: 80px;
   height: 80px;
   border-radius: 30px;
   margin-right: 10px;
 }
-#wrap > section.more .me > li:nth-child(1) > ul > li:nth-child(1) {
+body #wrap > section.more .me > li:nth-child(1) > ul > li:nth-child(1) {
   line-height: 40px;
   font-size: 20px;
   color: #fff;
 }
-#wrap > section.more .me > li:nth-child(1) > ul > li:nth-child(2) {
+body #wrap > section.more .me > li:nth-child(1) > ul > li:nth-child(2) {
   line-height: 30px;
   font-size: 16px;
   color: #acacac;
 }
-#wrap > section.more .me > li:nth-child(2) {
+body #wrap > section.more .me > li:nth-child(2) {
   padding-bottom: 15px;
   border-bottom: 1px solid #000;
 }
-#wrap > section.more .me > li:nth-child(2) > ul {
+body #wrap > section.more .me > li:nth-child(2) > ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
 }
-#wrap > section.more .me > li:nth-child(2) > ul > li > a > ul {
+body #wrap > section.more .me > li:nth-child(2) > ul > li > a > ul {
   width: 100px;
   text-align: center;
 }
-#wrap > section.more .me > li:nth-child(2) > ul > li > a > ul > li {
+body #wrap > section.more .me > li:nth-child(2) > ul > li > a > ul > li {
   color: #fff;
 }
-#wrap > section.more .me > li:nth-child(2) > ul > li > a > ul > li:nth-child(1) {
+body #wrap > section.more .me > li:nth-child(2) > ul > li > a > ul > li:nth-child(1) {
   font-size: 40px;
   margin-bottom: 10px;
 }
-#wrap > section.more .me > li:nth-child(2) > ul > li > a > ul > li:nth-child(2) {
+body #wrap > section.more .me > li:nth-child(2) > ul > li > a > ul > li:nth-child(2) {
   font-size: 15px;
 }
-#wrap > section.more .service > li:nth-child(1) {
+body #wrap > section.more .service > li:nth-child(1) {
   color: #fff;
   margin: 15px 0;
 }
-#wrap > section.more .service > li:nth-child(2) > ul {
+body #wrap > section.more .service > li:nth-child(2) > ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
 }
-#wrap > section.more .service > li:nth-child(2) > ul > li > a > ul {
+body #wrap > section.more .service > li:nth-child(2) > ul > li > a > ul {
   text-align: center;
 }
-#wrap > section.more .service > li:nth-child(2) > ul > li > a > ul > li {
+body #wrap > section.more .service > li:nth-child(2) > ul > li > a > ul > li {
   color: #fff;
 }
-#wrap > section.more .service > li:nth-child(2) > ul > li > a > ul > li:nth-child(1) {
+body #wrap > section.more .service > li:nth-child(2) > ul > li > a > ul > li:nth-child(1) {
   margin: 0 auto;
   width: 70px;
   line-height: 70px;
@@ -584,88 +579,138 @@
   border: 1px solid #000;
   border-radius: 15px;
 }
-#wrap > section.more .service > li:nth-child(2) > ul > li > a > ul > li:nth-child(2) {
+body #wrap > section.more .service > li:nth-child(2) > ul > li > a > ul > li:nth-child(2) {
   width: 100px;
   font-size: 15px;
   margin-top: 10px;
 }
-#wrap > section.talk {
-  height: 791px;
-  margin: 10px 15px;
-}
 @media screen and (min-width: 550px) {
-  #wrap > section.talk {
+  body #wrap > section.talk {
     display: none;
   }
 }
-#wrap > section.talk > .nav {
+body #wrap > section.talk > .nav {
   position: relative;
-  margin: 30px 0 40px 0;
+  margin: 30px 0 20px 0;
 }
-#wrap > section.talk > .nav > .left {
+body #wrap > section.talk > .nav > .left {
   display: flex;
   flex-flow: row wrap;
 }
-#wrap > section.talk > .nav > .left > li {
+body #wrap > section.talk > .nav > .left > li {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-right: 10px;
 }
-#wrap > section.talk > .nav > .left > li > a {
+body #wrap > section.talk > .nav > .left > li > a {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 30px;
 }
-#wrap > section.talk > .nav > .left > li:nth-child(2) > a {
+body #wrap > section.talk > .nav > .left > li > a > span {
+  margin-left: 10px;
+}
+body #wrap > section.talk > .nav > .left > li:nth-child(2) > a {
   color: #acacac;
 }
-#wrap > section.talk > .nav > .right {
+body #wrap > section.talk > .nav > .right {
   display: flex;
   flex-flow: row wrap-reverse;
   position: absolute;
   top: 0;
   right: 0;
 }
-#wrap > section.talk > .nav > .right > li > a {
+body #wrap > section.talk > .nav > .right > li > a {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
   margin-left: 20px;
 }
-#wrap > section.talk > .nav > .right > li:nth-child(3) > a:hover {
+body #wrap > section.talk > .nav > .right > li:nth-child(3) > a:hover {
   color: #365242;
 }
-#wrap > footer {
+body #wrap > section.talk > .chat {
+  height: 150%;
+}
+body #wrap > section.talk > .chat > p {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+body #wrap > section.talk > .chat > ul {
+  margin: 10px 0;
+}
+body #wrap > section.talk > .chat > .you {
+  display: flex;
+}
+body #wrap > section.talk > .chat > .you > li > img {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+body #wrap > section.talk > .chat > .you > li > ul > li {
+  border-radius: 10px;
+}
+body #wrap > section.talk > .chat > .you > li > ul > li:nth-child(1) {
+  color: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+body #wrap > section.talk > .chat > .you > li > ul > li:nth-child(2) {
+  padding: 3px 8px;
+  display: inline;
+  background-color: #9efdc7;
+  line-height: 16px;
+  font-size: 15px;
+}
+body #wrap > section.talk > .chat > .me {
+  display: flex;
+  justify-content: flex-end;
+}
+body #wrap > section.talk > .chat > .me > li {
+  display: inline;
+  padding: 8px 10px;
+  font-size: 18px;
+  background-color: #88bcff;
+  border-radius: 10px;
+}
+body #wrap > footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   padding: 10px 0;
   border-top: 1px solid #000;
 }
 @media screen and (min-width: 550px) {
-  #wrap > footer {
+  body #wrap > footer {
     display: none;
   }
 }
-#wrap > footer > ul {
+body #wrap > footer > ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-#wrap > footer > ul > li {
+body #wrap > footer > ul > li {
   width: 40px;
   line-height: 30px;
   text-align: center;
 }
-#wrap > footer > ul > li > a {
+body #wrap > footer > ul > li > a {
   font-size: 30px;
   color: #fff;
 }
-#wrap > footer > ul > li > a:hover {
+body #wrap > footer > ul > li > a:hover {
   color: #416450;
 }
-#wrap > footer > ul > li:nth-child(2) {
+body #wrap > footer > ul > li:nth-child(2) {
   position: relative;
 }
-#wrap > footer > ul > li:nth-child(2) > ul > li {
+body #wrap > footer > ul > li:nth-child(2) > ul > li {
   position: absolute;
   top: 0px;
   left: 24px;
@@ -677,28 +722,37 @@
   background-color: red;
   border-radius: 50px;
 }
-#wrap > footer.talk {
+body #wrap > footer.talk {
+  width: 530px;
+  background-color: #242424;
   border: 1px solid #000;
   margin: 0;
   padding: 0;
 }
-#wrap > footer.talk > p {
+body #wrap > footer.talk:hover {
+  animation: keyboard 1s ease-in-out;
+}
+body #wrap > footer.talk:hover > img {
+  display: block;
+}
+body #wrap > footer.talk > p {
   display: inline;
   color: #fff;
   margin: 0 auto;
   border: 1px solid #000;
 }
-#wrap > footer.talk > p > i {
+body #wrap > footer.talk > p > i {
   padding: 10px 7px 0 7px;
-  height: 60px;
+  height: 40px;
   font-size: 30px;
 }
-#wrap > footer.talk > p > input {
-  height: 35px;
+body #wrap > footer.talk > p > input {
+  height: 28px;
   width: 325px;
   margin-bottom: 10px;
   border: none;
 }
-#wrap > footer.talk > img {
-  width: 100%;
+body #wrap > footer.talk > img {
+  display: none;
+  height: 315px;
 }/*# sourceMappingURL=style.css.map */
